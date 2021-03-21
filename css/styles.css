@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* variables */
+:root {
+	--clr-primary-violet: hsl(257, 40%, 49%);
+	--clr-primary-soft_magenta: hsl(300, 69%, 71%);
+}
+
+html,
+body {
+	height: 100%;
+	overflow: auto;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+	.body {
+		background-color: var(--clr-primary-violet);
+		font-family: "Poppins", sans-serif;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url("/images/bg-mobile.svg");
+		margin: auto;
+		max-width: 768px;
+	}
+	.container {
+		height: 100vh;
+		max-width: 600px;
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		margin: auto;
+	}
+	.logo-sec {
+		height: 50px !important;
+		margin-bottom: 0px;
+	}
+	.logo {
+		display: block;
+		position: relative;
+		height: 50px;
+		margin-top: 10px !important;
+		margin-bottom: 0px !important;
+	}
+	.logo img {
+		position: inherit;
+		height: 40%;
+		width: 40%;
+		margin-bottom: 0px !important;
+		margin-top: 25px !important;
+		margin-left: 20px;
+		padding: 0px !important;
+	}
+
+	.main {
+		position: relative;
+		top: 10px;
+		margin: 0px !important;
+		display: flex !important;
+		text-align: center;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0px;
+	}
+	.hero {
+		justify-content: center;
+		align-items: center;
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
+	.hero img {
+		width: 100%;
+		padding: 0px 20px;
+		margin-bottom: 0px;
+	}
+	.CTA {
+		margin: 0px 20px !important;
+	}
+	.CTA h1 {
+		font-family: "Poppins", sans-serif;
+		font-size: 1.8rem !important;
+		color: #fff;
+		margin-bottom: 1.5rem;
+	}
+	.CTA p {
+		font-family: var(--body-font-400);
+		color: #fff;
+		font-size: 1rem;
+		margin-bottom: 0.5rem;
+	}
+	.links {
+		position: relative;
+		margin: 1px auto !important;
+		height: 30px !important;
+	}
+
+	.links-ion {
+		display: inline !important;
+		position: inherit;
+		bottom: 20px;
+		left: 70px;
+		text-align: center;
+		width: auto;
+	}
+	.links-ion ion-icon {
+		margin-right: 2px;
+		font-size: 15px;
+		font-weight: lighter;
+		color: #fff;
+	}
+}
+
+body {
+	background-color: var(--clr-primary-violet);
+	font-family: "Poppins", sans-serif;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("/images/bg-desktop.svg");
+	margin: auto;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	line-height: 1.6;
+}
+
+/* container */
+
+.container {
+	margin: auto;
+	height: 100%;
+	max-width: 1440px;
+	overflow: hidden;
+}
+
+/* logo */
+
+.logo {
+	height: 150px;
+	justify-items: center;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 20px 0 20px 0;
+}
+
+/* main */
+
+.main {
+	margin-top: auto;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px !important;
+}
+
+/* CTA */
+
+.CTA {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin: auto 50px auto 75px;
+}
+.CTA h1 {
+	font-family: "Poppins", sans-serif;
+	font-size: 2.5rem;
+	color: #fff;
+	margin-bottom: 1.5rem;
+}
+.CTA p {
+	font-family: var(--body-font-400);
+	color: #fff;
+	font-size: 1.05rem;
+	margin-bottom: 3rem;
+}
+.CTA a {
+	font-family: var(--body-font-400);
+	color: var(--clr-primary-violet);
+	text-decoration: none;
+	font-size: 1.1rem;
+	padding: 12px 85px;
+	border-radius: 30px;
+	background-color: #fff;
+}
+.CTA a:hover {
+	background-color: var(--clr-primary-soft_magenta);
+	color: #fff;
+}
+
+/* links */
+
+.links {
+	margin: auto;
+	height: 50px;
+}
+.links-ion {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	/* margin: 50px 50px 50px 1100px; */
+}
+
+.links-ion ion-icon {
+	margin-right: 25px;
+	font-size: 35px;
+	font-weight: lighter;
+	color: #fff;
+}
+.links-ion ion-icon:hover {
+	color: var(--clr-primary-soft_magenta);
+	cursor: pointer;
+}
+
+/*   Footer attribution -->
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 --> */
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
